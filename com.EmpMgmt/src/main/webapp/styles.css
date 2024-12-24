@@ -1,0 +1,101 @@
+/* General body and container styles (previously provided) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1, h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Form styles for "Add Employee" */
+form {
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+form input[type="text"], 
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus, 
+form input[type="number"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+form button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    form button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

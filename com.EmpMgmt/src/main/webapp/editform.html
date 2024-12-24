@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Employee</title>
+     <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h2>Edit Employee</h2>
+    <form action="UpdateEmployee" method="post">
+        <input type="hidden" id="eid" name="eid" value="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+        <label for="sal">Salary:</label>
+        <input type="number" id="sal" name="sal" step="0.01" required><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
